@@ -1,5 +1,9 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 
+const pageTitle = 'Home Page';
 ---
 
 <html lang='en'>
@@ -11,9 +15,7 @@
     <title>My Astro Site</title>
   </head>
   <body>
-    <a href='/'>Home</a>
-    <a href='/about/'>About</a>
-    <a href='/blog/'>Blog</a>
+    <Navigation />
 
     <h1>My Astro Site</h1>
 
@@ -35,5 +37,7 @@
       officiis ratione, aliquam et vel, itaque voluptas, error autem pariatur.
       Odit sequi officiis labore tempora non, repellendus perspiciatis rerum?
     </section>
+
+    <Footer />
   </body>
 </html>
